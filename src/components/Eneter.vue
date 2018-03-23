@@ -11,6 +11,7 @@
                 min-height: 100%;
                 min-width: 1000px;
                 width: 80%;
+                /* //k */
         }
      
 </style>
