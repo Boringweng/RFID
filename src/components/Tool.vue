@@ -37,9 +37,11 @@
         </Sider>
         <Layout :style="{marginLeft: '200px'}">
             <Content :style="{padding: '30px 30px 30px'}">
-                <h1> 工具狀態</h1>
+                <h1>工具管理</h1>
                 <Card>
-                    <div style="height: 500px">    
+                    <div style="height: 500px">
+                    <h3>新增</h3>
+                    <h3>刪除</h3>   
                     <Table height="200" :columns="columns1" :data="data2"></Table>
                     </div>
                 </Card>
@@ -50,7 +52,7 @@
 </template>
 <script>
     export default {
-        data () {
+          data () {
             return {
                 columns1: [
                     {
@@ -62,13 +64,9 @@
                         key: 'status'
                     },
                     {
-                        title: '時間',
-                        key: 'time'
-                    },
-                    {
-                        title: '人名',
-                        key: 'PID'
-                    }
+                        title: '管理',
+                        key: 'manage'
+                    }           
                 ],
             }
         }
