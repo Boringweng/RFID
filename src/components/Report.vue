@@ -69,6 +69,10 @@
                     {
                         title: '狀態',
                         key: 'status'
+                    },
+                    {
+                        title:'備註',
+                        key:'add'
                     }
                                        
                 ],

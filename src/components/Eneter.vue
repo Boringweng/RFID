@@ -24,10 +24,8 @@
                 <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
                 <h2>密碼</h2>
                 <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
-                <Button type="info" id="toleading">
-                    <li>
-                        <a v-link="{ path: '/Status'}">News</a>
-                    </li>                
+                <Button type="info" >
+                    登入                
                  </Button>
                 
              </card>
