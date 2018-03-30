@@ -1,6 +1,48 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import Vue from 'vue'
 import Router from 'vue-router'
-import Eneter from '@/components/Eneter'
+import Enter from '@/components/Enter'
 import Report from '@/components/Report'
 import Lending from '@/components/Lending'
 import Status from '@/components/Status'
@@ -37,8 +79,8 @@ export default new Router({
     },
     {
       path: '/Enter',
-      name: 'Eneter',
-      component: Eneter
+      name: 'Enter',
+      component: Enter
     }
   ]
 })

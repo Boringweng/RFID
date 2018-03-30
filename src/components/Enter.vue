@@ -17,16 +17,13 @@
 </style>
 <template>
     <div class="layout" >
-       <!-- <img src ="http://go.skyyer.com/wp-content/uploads/bfi_thumb/00-n5gj53q3ooi1vu6l2a4c89f4f4inoq2s91yxxiuol8.jpg"> -->
         <card class="inputdata">
                 <h1 color="blue">CRSG登入</h1>
                 <h2>學號</h2>
                 <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
                 <h2>密碼</h2>
                 <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
-                <Button type="info" >
-                    登入                
-                 </Button>
+                 <router-link to ="Status"><Button type="info" >登入</Button></router-link>
                 
              </card>
     </div>

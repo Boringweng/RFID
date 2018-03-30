@@ -27,15 +27,15 @@
             <Menu active-name="1-2" theme="dark" width="auto" :open-names="['1']">
                 <div class="showmaber">
                     <h1 style="color :white">名字顯示處</h1>
-                    <Button type="primary" size="small">登出</Button>
+                   <router-link to ="Enter"><Button type="primary" size="small">登出</Button></router-link>
                 </div>  
-                    <MenuItem name="1">工具狀態</MenuItem>
-                    <MenuItem name="2">借還記錄</MenuItem>
-                    <MenuItem name="3">外借系統</MenuItem>
-                    <MenuItem name="4">工具管理</MenuItem>
+                    <router-link to ="Status"><MenuItem name="1">工具狀態</MenuItem></router-link>
+                    <router-link to ="Report"><MenuItem name="2">借還記錄</MenuItem></router-link>
+                    <router-link to ="Lending"><MenuItem name="3">外借系統</MenuItem></router-link>
+                    <router-link to ="Tool"><MenuItem name="4">工具管理</MenuItem></router-link>
             </Menu>
         </Sider>
-        <Layout :style="{marginLeft: '200px'}">
+        <Layout :style="{marginLeft: '200px',height:'100vh'}">
             <Content :style="{padding: '30px 30px 30px'}">
                 <h1>借還記錄</h1>
                 <Card>
