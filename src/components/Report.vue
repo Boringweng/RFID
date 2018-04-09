@@ -63,8 +63,12 @@
                         key: 'time'
                     },
                     {
-                        title: '工具',
+                        title: '工具編號',
                         key: 'IID'
+                    },
+                    {
+                        title: '工具名稱',
+                        key: 'Iname'
                     },
                     {
                         title: '狀態',

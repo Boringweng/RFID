@@ -54,8 +54,8 @@
             return {
                 columns1: [
                     {
-                        title: '工具',
-                        key: 'IID'
+                        title: '工具名稱',
+                        key: 'Iname'
                     },
                     {
                         title: '狀態',

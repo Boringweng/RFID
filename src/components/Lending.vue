@@ -59,7 +59,7 @@
                     </div>
                     </Col> 
                     <Col span="14">
-                    <div style="height: 500vh">
+                    <div>
                         <Table :columns="columns1" :data="data1"></Table>
                     </div>
                     </Col>
