@@ -39,9 +39,16 @@
             <Content :style="{padding: '30px 30px 30px'}">
                 <h1>工具管理</h1>
                 <Card>
+                    工具名稱
+                    <Input v-model="value" placeholder="Enter something..." style="width: 200px"></Input>
+                    <Button type="primary" :loading="loading" icon="checkmark-round" @click="toLoading">
+                            <span v-if="!loading">開始刷取條碼</span>
+                            <span v-else>Loading...</span>
+                    </Button>
+                    <Button @click="success(false)">Success</Button>
+                </Card>
+                <Card>
                     <div style="height: 500px">
-                    <h3>新增</h3>
-                    <h3>刪除</h3>   
                     <Table height="200" :columns="columns1" :data="data2"></Table>
                     </div>
                 </Card>
@@ -52,7 +59,7 @@
 </template>
 <script>
     export default {
-          data () {
+        data () {
             return {
                 columns1: [
                     {
@@ -66,13 +73,50 @@
                     {
                         title: '狀態',
                         key: 'status'
-                    },
+                    },         
                     {
                         title: '管理',
-                        key: 'manage'
-                    }           
+                        key: 'action',
+                        width: 150,
+                        align: 'center',
+                        render: (h, params) => {
+                            return h('div', [
+                                h('Button', {
+                                    props: {
+                                        type: 'error',
+                                        size: 'small'
+                                    },
+                                    on: {
+                                        click: () => {
+                                            this.remove(params.index)
+                                        }
+                                    }
+                                }, 'Delete')
+                            ]);
+                        }
+                    }            
                 ],
+                data2 :[
+                    {
+                        IID:'RFIDID',
+                        Iname:'物品名字',
+                        status:'在隊上或外借',
+                        
+                    }
+                ],
+                loading: false,  
             }
-        }
+        },
+        methods: {
+            toLoading () {
+                this.loading = true;
+            },
+            success (nodesc) {
+                this.$Notice.success({
+                    title: 'Notification title',
+                    desc: nodesc ? '' : 'Here is the notification description. Here is the notification description. '
+                });
+            },
+        }            
     }
 </script>
