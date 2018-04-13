@@ -27,7 +27,7 @@
             <Menu active-name="1-2" theme="dark" width="auto" :open-names="['1']">
                 <div class="showmaber">
                     <h1 style="color :white">名字顯示處</h1>
-                    <router-link to ="Eneter"><Button type="primary" size="small">登出</Button></router-link>
+                    <router-link to ="Enter"><Button type="primary" size="small">登出</Button></router-link>
                 </div>  
                     <router-link to ="Status"><MenuItem name="1">工具狀態</MenuItem></router-link>
                     <router-link to ="Report"><MenuItem name="2">借還記錄</MenuItem></router-link>

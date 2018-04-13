@@ -5,11 +5,17 @@ import Report from '@/components/Report'
 import Lending from '@/components/Lending'
 import Status from '@/components/Status'
 import Tool from '@/components/Tool'
+import demo from '@/components/demo'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/demo',
+      name: 'demo',
+      component: demo
+    },
     {
       path: '/Status',
       name: 'Status',

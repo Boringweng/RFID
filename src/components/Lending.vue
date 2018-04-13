@@ -56,6 +56,12 @@
                             <span v-if="!loading2">Click me!</span>
                             <span v-else>Loading...</span>
                         </Button>
+                        <button>
+                            確定送出
+                        </button>
+                        <button>
+                            取消
+                        </button>
                     </div>
                     </Col> 
                     <Col span="14">
