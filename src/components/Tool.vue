@@ -39,13 +39,13 @@
             <Content :style="{padding: '30px 30px 30px'}">
                 <h1>工具管理</h1>
                 <Card>
-                    工具名稱
+                    <h5>新增工具名稱</h5>
                     <Input v-model="value" placeholder="Enter something..." style="width: 200px"></Input>
                     <Button type="primary" :loading="loading" icon="checkmark-round" @click="toLoading">
                             <span v-if="!loading">開始刷取條碼</span>
                             <span v-else>Loading...</span>
                     </Button>
-                    <Button @click="success(false)">Success</Button>
+                    <Button @click="success(false)">送出</Button>
                 </Card>
                 <Card>
                     <div style="height: 500px">

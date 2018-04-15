@@ -53,15 +53,13 @@
                         <h3>擔保人</h3>
                         <Input v-model="PID" placeholder="正副班長" clearable style="width: 200px"></Input>    
                         <Button type="primary" :loading="loading2" icon="checkmark-round" @click="toLoading2">
-                            <span v-if="!loading2">Click me!</span>
-                            <span v-else>Loading...</span>
+                            <span v-if="!loading2">開始掃描</span>
+                            <span v-else>掃描中</span>
                         </Button>
-                        <button>
-                            確定送出
-                        </button>
-                        <button>
-                            取消
-                        </button>
+                        <br><br>    
+                        <Button type="success" long>送出</Button>
+                        <br><br>
+                        <Button type="error" long>取消</Button>
                     </div>
                     </Col> 
                     <Col span="14">
