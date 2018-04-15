@@ -4,14 +4,20 @@
         top:calc(50% - 15px);
         margin-left:calc(50% - 45px);
     }
-    .h1 {
-    color: green;
-}
+    .box{
+        padding: '30px 30px 30px';
+        background-image: url(https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/26055945_952923548217261_9075026729100799423_n.jpg?_nc_cat=0&oh=469f9b883186fbeeffa80e3c9a6dc6a5&oe=5B2B1EA8  );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        
+    }
 </style>
 <template>
     <div class="layout" >
         <Layout  :style="{minHeight: '100vh'}">
-            <Sider>
+            <Sider :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
                 <br><br><br><br><br><br><br>
                     <Form class="centerofy" ref="formInline" :model="formLeft" label-poseition="left" :rules="ruleInline" >
                         <FormItem prop="user">
@@ -31,7 +37,11 @@
                             <router-link to="Status"><Button >登入</Button></router-link>
                         </FormItem>
                         </Form>                   
-               </Sider>
+                </Sider>
+                <Content class="box">
+
+                </Content>
+
         </Layout>    
     </div>
 </template>
