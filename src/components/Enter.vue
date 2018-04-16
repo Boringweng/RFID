@@ -2,7 +2,7 @@
     .centerofy{
         float:left;
         top:calc(50% - 15px);
-        margin-left:calc(50% - 45px);
+     
     }
     .box{
         padding: '30px 30px 30px';
@@ -18,7 +18,9 @@
     <div class="layout" >
         <Layout  :style="{minHeight: '100vh'}">
             <Sider :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
-                <br><br><br><br><br><br><br>
+                    <svg height="10vh" width="10vw">
+                         <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                     </svg>
                     <Form class="centerofy" ref="formInline" :model="formLeft" label-poseition="left" :rules="ruleInline" >
                         <FormItem prop="user">
                             <h1 style="color :white">學號</h1>
